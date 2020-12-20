@@ -3,10 +3,20 @@
  <input type="text" #newquery>
  <button (click)="submit(newquery)">Search</button>
 </p>
+
 <div *ngIf="results">
-{{results.name}}
-{{results.base_experience}}
-<img src="{{ results.sprites.other.dream_world.front_default }}" class="img-responsive">
+  <div class="container">
+  <h2>{{results.name}}</h2>
+  <div class="card" style="width:400px">
+    <img class="card-img-top" src="{{ results.sprites.other.dream_world.front_default }}" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">{{results.name}}</h4>
+      <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+
 </div>
+
+
 
 
