@@ -4,5 +4,8 @@
  <button (click)="submit(newquery)">Search</button>
 </p>
 <div *ngIf="results">
- {{results | json}}
+{{results.name}}
+{{results.base_experience}}
+<img src="{{ results.sprites.other.dream_world.front_default }}" class="img-responsive">
 </div>
+
