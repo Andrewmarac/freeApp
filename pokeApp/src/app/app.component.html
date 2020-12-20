@@ -1,11 +1,11 @@
-<h1>Search</h1>
-<p>
- <input type="text" #newquery>
- <button (click)="submit(newquery)">Search</button>
-</p>
-<div *ngIf="results">
-{{results.name}}
-{{results.base_experience}}
-<img src="{{ results.sprites.other.dream_world.front_default }}" class="img-responsive">
-</div>
+<h1>POKEMON APP</h1>
+<nav>
+<a routerLink="/about" routerLinkActivate="activate">About</a>
+<a routerLink="/search" routerLinkActivate="activate">Search</a>
+</nav>
+<router-outlet></router-outlet>
+
+
+
+
 
